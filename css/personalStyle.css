@@ -1,0 +1,44 @@
+#vincent-navbar{
+  color: rgba(240, 95, 64, .7);
+}
+#vincent-navbar:hover{
+  color: #f05f40;
+  font-size: 20px;
+}
+
+#personalNavBarStyle a.personalNavBarItems{
+  color: rgba(240, 95, 64, .5);
+}
+#personalNavBarStyle a.personalNavBarItems:hover{
+  color: #f05f40;
+  font-size: 15px;
+}
+
+#personalMainHeader p.personalOrangeColor{
+  color: #f05f40;
+}
+
+.hidden{
+  display: none;
+}
+
+#contact{
+  display: flex;
+}
+#contact a:hover{
+  text-decoration: none;
+}
+
+#contact div.contact-method-icons{
+  margin-bottom: 20px;
+}
+#skills#personalRowPadding.skillbox div h3{
+  margin-top: 0;
+}
+#skills img {
+  height: 57px;
+  width: 57px;
+}
+/*#personalRowPadding .row{
+  padding-bottom: 15px;
+}*/

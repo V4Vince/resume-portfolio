@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>Vincent Guo</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -18,13 +18,15 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-
+    <!--Personal Icons-->
+    <link rel="stylesheet" href="assets/styles/font-mfizz/font-mfizz.css">
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-
-    <!-- Custom CSS -->
+    <!-- Template CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
 
+    <!-- Personal Css -->
+    <link rel="stylesheet" href="css/personalStyle.css" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -46,23 +48,26 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a id="vincent-navbar" class="navbar-brand page-scroll" href="#page-top">Vincent Guo</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul id="personalNavBarStyle" class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="personalNavBarItems page-scroll" href="#bio">bio</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="personalNavBarItems page-scroll" href="#skills">skills</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="personalNavBarItems page-scroll" href="#experience">Experience</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="personalNavBarItems page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="personalNavBarItems page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -71,68 +76,112 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
+    <header id="personalMainHeader">
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Your Favorite Source of Free Bootstrap Themes</h1>
+                <h1>Vincent Guo</h1>
                 <hr>
-                <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+                <p class="personalOrangeColor">Full Stack Developer</p>
+                <a href="#bio" class="btn btn-primary btn-xl page-scroll">Read Bio</a>
             </div>
         </div>
     </header>
 
-    <section class="bg-primary" id="about">
+    <section class="bg-primary" id="bio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">We've got what you need!</h2>
+                    <h2 class="section-heading">Passion In Building</h2>
                     <hr class="light">
-                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                    <a href="#" class="btn btn-default btn-xl">Get Started!</a>
+                    <p class="text-faded">I love to be creative and to build and create things that will make people lives easier. I also believe that continual learning is key to a fulfilling life. Coding has become my passion because I'm always learning new things and it allows me to be creative in the things I build.</p>
+                    <a href="#skills" class="page-scroll btn btn-default btn-xl">What I know</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services">
+    <section id="skills">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
+                    <h2 class="section-heading">Programming Languages</h2>
                     <hr class="primary">
                 </div>
             </div>
         </div>
         <div class="container">
+            <div id="personalRowPadding" class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="skill-box">
+                        <img class="wow bounceIn" src="http://findicons.com/files/icons/2773/pictonic_free/512/prog_nodejs02.png" alt="" />
+                        <h3>JavaScript</h3>
+                        <p class="hidden text-muted">Our templates are updated regularly so they don't break.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="skill-box">
+                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>HTML &amp; CSS</h3>
+                        <p class="hidden text-muted">You can use this theme as is, or you can make changes!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="skill-box">
+                        <img class="wow bounceIn" src="http://data.whicdn.com/images/73645613/large.png" alt="" />
+                        <h3>Ruby</h3>
+                        <p class="hidden text-muted">We update dependencies to keep things fresh.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="skill-box">
+                        <img class="wow bounceIn" src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/158/Ruby_on_Rails_2-512.png" alt="" />
+                        <h3>Ruby on Rails</h3>
+                        <p class="hidden text-muted">You have to make your websites with love these days!</p>
+                    </div>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                    <div class="skill-box">
+                        <img src="http://findicons.com/files/icons/2773/pictonic_free/512/dbs_mongodb.png" alt="" />
+                        <h3>MongoDB</h3>
+                        <p class="hidden text-muted">Our templates are updated regularly so they don't break.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                    <div class="skill-box">
+                        <i class="fa fa-5x icon-nodejs wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>Node.js</h3>
+                        <p class="hidden text-muted">You can use this theme as is, or you can make changes!</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
+                    <div class="skill-box">
                         <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                        <h3>mySQL</h3>
+                        <p class="hidden text-muted">We update dependencies to keep things fresh.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
+                    <div class="skill-box">
                         <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
                         <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
+                        <p class="hidden text-muted">You have to make your websites with love these days!</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary" id="experience">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">My Experience</h2>
+                    <hr class="light">
+                    <p class="text-faded">General Assembly - Boston</p>
+                    <a href="#portfolio" class="page-scroll btn btn-default btn-xl">My Portfolio</a>
                 </div>
             </div>
         </div>
@@ -248,17 +297,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <h2 class="section-heading">Contact me</h2>
                     <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
                 </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>123-456-6789</p>
+                <div class="row">
+                    <div class="contact-method-icons col-lg-3 col-lg-offset-3 text-center">
+                        <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                        <p>(978) 967-9535</p>
+                    </div>
+                    <div class="contact-method-icons col-lg-3 text-center">
+                        <a href="mailto:vince.guoo@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i></a>
+                        <p>vince.guoo@gmail.com</p>
+                    </div>
                 </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                <div class="row">
+                    <div class="contact-method-icons col-lg-3  col-lg-offset-3 text-center">
+                        <a href="https://www.linkedin.com/in/v4vince" target="_blank"><i class="fa fa-linkedin-square fa-3x wow bounceIn" data-wow-delay=".1s"></i></a>
+                        <p>Connect with me on linkedin</p>
+                    </div>
+                    <div class="contact-method-icons col-lg-3 text-center">
+                        <a href="https://github.com/V4Vince" target="_blank"><i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i></a>
+                        <p>Check me out on Github</p>
+                    </div>
                 </div>
             </div>
         </div>
